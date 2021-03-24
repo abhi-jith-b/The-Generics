@@ -18,7 +18,7 @@ html, body {
 }
 
 .main-header {
-    background-image: url(images/Header\ Background.jpg);
+    background-image: url(images/Header-Background.jpg);
     background-size: cover;
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
