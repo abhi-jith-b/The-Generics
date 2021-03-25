@@ -166,9 +166,12 @@ body {
     padding: 0;
     border-radius: 50%;
     font-size: 4em;
-    color: #2D9CDB;
     width: 100px;
     height: 100px;   
+}
+
+.play-icon {
+    color: #2D9CDB;
 }
 
 .tour-row {
