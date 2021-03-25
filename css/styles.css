@@ -85,10 +85,6 @@ body {
     font-size: 9em;
 }
 
-/* .content-section {
-    margin-bottom: 35px;
-} */
-
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -206,6 +202,37 @@ body {
 .tour-btn {
     max-width: 20%;     /**  doesn't add upto 100% to compensate for the default padding of inline-block elements **/ 
     padding-right: .67em;
+}
+
+.shop-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item-card {
+    margin: 30px;
+}
+
+.shop-item-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    width: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
 }
 
 @media (max-width: 700px) {
