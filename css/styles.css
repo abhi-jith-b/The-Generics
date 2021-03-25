@@ -128,6 +128,83 @@ body {
     width: 30px;
 }
 
+.btn {
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.btn-header {
+    color: white;
+    background-color: rgba(255, 255, 255, .1);
+    border: 2px solid #2D9CDB;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: .5em 15% 2em 15%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.play-btn {
+    display: block;     /*  margin auto will not work for inline  */
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 4em;
+    color: #2D9CDB;
+    width: 100px;
+    height: 100px;   
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;      /** inline elements cannot have specific widths **/
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 20%;     /**  doesn't add upto 100% to compensate for the default padding of inline-block elements **/ 
+    padding-right: .67em;
+}
+
 @media (max-width: 700px) {
 
     .about-band-image {
@@ -138,6 +215,18 @@ body {
 
     .container {
         text-align: center;
+    }
+
+    .tour-item {
+        width: 100%;
+        margin-bottom: .25em;
+        padding-right: 0;
+    }
+
+    .tour-btn {
+        margin-top: .25em;
+        max-width: 30%;
+        padding-right: .67em;
     }
 
     /* Footer */
@@ -163,5 +252,23 @@ body {
 
     .band-name-large{
         font-size: 25vw;
+    }
+
+    .btn-header {
+        font-size: 5vw;
+        padding: 0.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .tour-btn {
+        max-width: 50%;
+    }
+
+    .play-btn {
+        font-size: 1.5em;
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+        padding: 0;
     }
 }
