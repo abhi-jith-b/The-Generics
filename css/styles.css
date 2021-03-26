@@ -53,7 +53,7 @@ body {
 .nav a {
     display: inline-block;
     color: white;
-    padding: .5em;
+    padding: .5rem;
     text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ body {
 
 .main-nav {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
@@ -75,20 +75,20 @@ body {
 .band-name {
     text-align: center;
     margin: 0;
-    font-size: 4em;
+    font-size: 4rem;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
 }
 
 .band-name-large {
-    font-size: 9em;
+    font-size: 9rem;
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 0 1.5rem;
     line-height: 1.5;  
 }
 
@@ -97,7 +97,7 @@ body {
     font-weight: normal;
     color: #333;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .about-band-image {
@@ -125,7 +125,7 @@ body {
 }
 
 .btn {
-    padding: .67em;
+    padding: .67rem;
     cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ body {
     color: white;
     background-color: #56CCF2;
     border: none;
-    border-radius: .3em;
+    border-radius: .3rem;
     font-weight: bold;
 }
 
@@ -145,11 +145,11 @@ body {
     color: white;
     background-color: rgba(255, 255, 255, .1);
     border: 2px solid #2D9CDB;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: lighter;
     margin: .5em 15% 2em 15%;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .btn-header:hover {
@@ -161,7 +161,7 @@ body {
     margin: 0 auto;
     padding: 0;
     border-radius: 50%;
-    font-size: 4em;
+    font-size: 4rem;
     width: 100px;
     height: 100px;   
 }
@@ -172,8 +172,8 @@ body {
 
 .tour-row {
     border-bottom: 1px solid black;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .tour-row:last-child {
@@ -182,7 +182,7 @@ body {
 
 .tour-item {
     display: inline-block;      /** inline elements cannot have specific widths **/
-    padding-right: .5em;
+    padding-right: .5rem;
 }
 
 .tour-date {
@@ -201,7 +201,11 @@ body {
 
 .tour-btn {
     max-width: 20%;     /**  doesn't add upto 100% to compensate for the default padding of inline-block elements **/ 
-    padding-right: .67em;
+    padding-right: .67rem;
+}
+
+.shop-item-section-header {
+    margin-bottom: 0;
 }
 
 .shop-item {
@@ -215,9 +219,10 @@ body {
 }
 
 .shop-item-header {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     display: block;
+    width: 100%;
     text-align: center;
     color: #333;
     margin-bottom: 15px;
@@ -235,6 +240,139 @@ body {
     padding: 7px;
 }
 
+.shop-item-price {
+    text-align: left;
+    max-width: 50%;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.cart-row:nth-last-child(2) .cart-cell{     /*  3rd last child of parent of cart-row    */
+    border-bottom: none;
+}
+
+.cart-row:nth-last-child(2) {
+    border-bottom: 1px solid black;
+}
+
+.cart-row-header {
+    font-weight: bold;
+}
+
+.cart-row-header .cart-cell  {
+    color: #333;
+}
+
+.cart-item {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.cart-item-title {
+    color: #333;
+}
+
+.cart-item > .cart-item-image-wrap, span {
+    width: 40%;
+    text-align: center;
+}
+
+.cart-price {
+    width: 20%;
+    color: #333;
+    margin: 10px 1.5rem 0;
+}
+
+.cart-quantity {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: #EB5757;
+    /* color: white; */
+    border: none;
+    border-radius: .3rem;
+    font-weight: bold;
+}
+
+.btn-danger-text {
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.remove-icon {
+    color: white;
+    font-size: 16px;
+}
+
+.cart-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        /* NOT WORKING  */
+    margin: 40px 0 60px;
+    /* padding: 30px 0; */
+}
+
+.cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.cart-total-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: .8em;
+}
+
+.cart-total-price {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.purchase-btn {
+    font-size: 1.75rem;
+}
+
 @media (max-width: 700px) {
 
     .about-band-image {
@@ -249,14 +387,14 @@ body {
 
     .tour-item {
         width: 100%;
-        margin-bottom: .25em;
+        margin-bottom: .25rem;
         padding-right: 0;
     }
 
     .tour-btn {
-        margin-top: .25em;
+        margin-top: .25rem;
         max-width: 30%;
-        padding-right: .67em;
+        padding-right: .67rem;
     }
 
     /* Footer */
@@ -276,6 +414,11 @@ body {
     .main-footer-container li {
         padding: 0 3%;
     }
+
+    .cart-item > .cart-item-image-wrap, span {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 500px) {
@@ -286,8 +429,8 @@ body {
 
     .btn-header {
         font-size: 5vw;
-        padding: 0.5em;
-        margin-bottom: 1.5em;
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .tour-btn {
@@ -295,10 +438,41 @@ body {
     }
 
     .play-btn {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         height: 50px;
         width: 50px;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .cart-cell, .cart-cell * {
+        font-size: .9rem;
+    }
+
+    .cart-item-image {
+        height: 50px;
+        width: 50px;
+    }
+
+    .cart-quantity-input {
+        height: 30px;
+        width: 40px;
+    }
+
+    .btn-danger {
+        padding: 0.5rem 0.6rem;
+    }
+
+    .btn-danger-text {
+        display: none;
+    }
+
+    .cart-details {
+        margin: 0;
+        display: block;
+    }
+
+    .purchase-btn {
+        margin: 30px 0 40px;
     }
 }
